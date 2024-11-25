@@ -15,6 +15,12 @@ int main()
 	
 	printf("nhap so bat ki:");
 	scanf("%d", &b);
+	
+	// choice 
+	printf("Hay chon menu\n"); 
+	scanf("%d",choice);
+	
+	
 	// vong lap
 	while(1)
 	{
