@@ -1,13 +1,13 @@
 #include<stdio.h>
 int main()
 {
-	int a,b,choice,tong ,hieu,tich,thuong,thoat;
+	int a,b,choice,tong ,hieu,tich,thuong;
 	// menu
-	printf("1.Tong 2 so");
-	printf("2.Hieu 2 so");
-	printf("3.Tich 2 so");
-	printf("4.Thuong 2 so");
-	printf("Thoat");
+	printf("1.Tong 2 so\n");
+	printf("2.Hieu 2 so\n");
+	printf("3.Tich 2 so\n");
+	printf("4.Thuong 2 so\n");
+	printf("5.Thoat\n");
 	
 	//nhap 2 so
 	printf("nhap so bat ki:");
@@ -16,7 +16,7 @@ int main()
 	printf("nhap so bat ki:");
 	scanf("%d", &b);
 	// vong lap
-	while(choice= thoat)
+	while(1)
 	{
 		// dieu kien
 		switch(choice)
@@ -34,19 +34,28 @@ int main()
 				printf("%d * %d = %d",a,b,tich);
 				break;
 			case 4:
-				thuong = a/b;
+				if(b!=0)
+				{
+					thuong = a/b;
 				printf("%d / %d = %d",a,b,thuong);
 				break;
+				}
+				else
+				{
+					printf("Khong the chia");
+					break;
+				}
+				
 			case 5:
 				printf("Thoat");
-				goto end;
+				return 0;
 			default:
-		printf("Thoat");	
+		printf("loi");	
 			 
 		}
 		
 		
 	}
-	end:
+	
 	return 0;
 }
