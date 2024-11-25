@@ -15,7 +15,7 @@ int main()
 			for( b=1 ;b<=10;b++)
 			{
 				tich = a*b;
-				printf("Bang cuu chuong cua %d la %d\n",a,tich);
+				printf("%d*%d=%d\n",a,b,tich);
 				
 			
 			}
